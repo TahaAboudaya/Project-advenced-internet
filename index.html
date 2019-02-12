@@ -1,0 +1,515 @@
+<!DOCTYPE HTML>
+<html class="no-js">
+<head>
+<!-- Basic Page Needs
+  ================================================== -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Experince Forex - Responsive Car Dealership Template</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="">
+<!-- Mobile Specific Metas
+  ================================================== -->
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+<meta name="format-detection" content="telephone=no">
+<!-- CSS
+  ================================================== -->
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+<link href="css/bootstrap-theme.css" rel="stylesheet" type="text/css">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="vendor/prettyphoto/css/prettyPhoto.css" rel="stylesheet" type="text/css">
+<link href="vendor/owl-carousel/css/owl.carousel.css" rel="stylesheet" type="text/css">
+<link href="vendor/owl-carousel/css/owl.theme.css" rel="stylesheet" type="text/css">
+<!--[if lte IE 9]><link rel="stylesheet" type="text/css" href="css/ie.css" media="screen" /><![endif]-->
+<link href="css/custom.css" rel="stylesheet" type="text/css"><!-- CUSTOM STYLESHEET FOR STYLING -->
+<!-- Color Style -->
+<link href="colors/color1.css" rel="stylesheet" type="text/css">
+<script src="js/readjson.js" type="text/javascript"></script>
+<!-- SCRIPTS
+  ================================================== -->
+<script src="js/modernizr.js"></script><!-- Modernizr -->
+</head>
+<body class="home">
+<!--[if lt IE 7]>
+	<p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+<![endif]-->
+<div class="body">
+	<!-- Start Site Header -->
+	<div class="site-header-wrapper">
+        <header class="site-header">
+            <div class="container sp-cont">
+                <div class="site-logo">
+                    <h1><a href="index.html"><img src="images/logo.png" alt="Logo"></a></h1>
+                    <span class="site-tagline">Buying or Selling,<br>just got easier!</span>
+                </div>
+                <div class="header-right">
+                    <div class="user-login-panel">
+                        <a href="#" class="user-login-btn" data-toggle="modal" data-target="#loginModal"><i class="icon-profile"></i></a>
+                    </div>
+                    <div class="topnav dd-menu">
+                        <ul class="top-navigation sf-menu">
+						                            <li><a href="add-listing-form.html">Sell</a></li>
+
+                            <li><a href="joinus.html">Join</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- End Site Header -->
+        <div class="navbar">
+            <div class="container sp-cont">
+                <div class="search-function">
+                    <a href="#" class="search-trigger"><i class="fa fa-search"></i></a>
+                    <span><i class="fa fa-phone"></i> Call us 0926900000<strong></strong> <em>or</em> search</span>
+                </div>
+                <a href="#" class="visible-sm visible-xs" id="menu-toggle"><i class="fa fa-bars"></i></a>
+                <!-- Main Navigation -->
+                <nav class="main-navigation dd-menu toggle-menu" role="navigation">
+                    <ul class="sf-menu">
+                        <li><a href="index.html">Home</a>
+                            
+                        </li>
+                        <li><a href="contact.html">Contact Us</a>
+                                                </li>
+                        <li class="megamenu"><a href="index.html">categories</a>
+                            <ul class="dropdown">
+                                <li>
+                                    <div class="megamenu-container container">
+                                         <form>
+                            <h3>categories</h3>
+                            <div class="row">
+                                <div class="col-md-2 col-sm-6 footer_widget widget widget_custom_menu widget_links">
+                                            <ul>
+                        	<li><a href="results-list.html">KIA</a></li>
+							<hr>
+                        	<li><a href="results-list-1.html">HUNDAI</a></li>
+							<hr>
+                        	
+                        </ul>
+                    </div>
+                                <div class="col-md-2 col-sm-6 footer_widget widget widget_custom_menu widget_links">
+                                            <ul>
+                        	<li><a href="results-list-2.html">BMW</a></li>
+							<hr>
+                        	<li><a href="results-list-3.html">Mercedes</a></li>
+							<hr>
+                        	
+                        </ul>
+                    </div>
+<div class="col-md-2 col-sm-6 footer_widget widget widget_custom_menu widget_links">
+                                            <ul>
+                        	<li><a href="results-list-4.html">NISSAN</a></li>
+							<hr>
+                        	<li><a href="results-list-5.html">TOYOTA</a></li>
+							<hr>
+                        	
+                        </ul>
+                    </div>
+				
+						  </div>
+                        </form>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        
+                                      
+                                            </ul>
+                </nav> 
+                <!-- Search Form -->
+                <div class="search-form">
+                    <div class="search-form-inner">
+                        <form>
+                            <h3>Find a Car with our Quick Search</h3>
+                            <div class="search-form-inner">
+                    <form>
+                    	<div class="input-group input-group-lg">
+      						<input type="text" class="form-control" onkeyup="search(em.value)" placeholder="model.." id="em">
+                        											
+      					 </div>
+						 
+						 <div class="input-group input-group-lg">
+                                            <select name="Body Type" class="btn btn-primary" style=" margin-top: -70px;
+    margin-left: 282px;
+    width: 207px;
+    height: 44px;" id="type">
+											    <option value="" selected> </option>
+                                                <option value="new" >New</option>
+                                                <option value="old" >Used</option>
+                                             </select>
+                        </div>
+                        <div id="cars_array">
+						
+						</div>
+                        
+						
+                    </form>
+                </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+   	</div>
+    <div class="hero-area">
+        <!-- Start Hero Slider -->
+        <div class="hero-slider heroflex flexslider clearfix" data-autoplay="yes" data-pagination="no" data-arrows="yes" data-style="fade" data-speed="7000" data-pause="yes">
+            <ul class="slides">
+                <li class="parallax" style="background-image:url(slide-show1.jpg);"></li>
+                <li class="parallax" style="background-image:url(1.jpg);"></li>
+				 <li class="parallax" style="background-image:url(2.jpg);"></li>
+				  <li class="parallax" style="background-image:url(3.jpg);"></li>
+				   <li class="parallax" style="background-image:url(4.jpg);"></li>
+            </ul>
+        </div>
+        <!-- End Hero Slider -->
+    </div>
+    <!-- Utiity Bar -->
+    <div class="utility-bar">
+    	<div class="container">
+        	<div class="row">
+            	
+            	<div class="col-md-12 col-sm-10 col-xs-8">
+                	<ul class="utility-icons social-icons social-icons-colored">
+                    	<li class="facebook"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    	<li class="twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    	<li class="googleplus"><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                    	<li class="linkedin"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+          	</div>
+      	</div>
+    	<div class="by-type-options">
+    		<div class="container">
+               	<div class="row">
+                  	<ul class="owl-carousel carousel-alt" data-columns="6" data-autoplay="" data-pagination="no" data-arrows="yes" data-single-item="no" data-items-desktop="6" data-items-desktop-small="4" data-items-mobile="3" data-items-tablet="4">
+                    	<li class="item"> <a href="results-list.html"><img src="images/body-types/wagon.png" alt=""> <span>Wagon</span></a></li>
+                    	<li class="item"> <a href="results-list.html"><img src="images/body-types/minivan.png" alt=""> <span>Minivan</span></a></li>
+                    	<li class="item"> <a href="results-list.html"><img src="images/body-types/coupe.png" alt=""> <span>Coupe</span></a></li>
+                    	<li class="item"> <a href="results-list.html"><img src="images/body-types/convertible.png" alt=""> <span>Convertible</span></a></li>
+                    	<li class="item"> <a href="results-list.html"><img src="images/body-types/crossover.png" alt=""> <span>Crossover</span></a></li>
+                    	<li class="item"> <a href="results-list.html"><img src="images/body-types/suv.png" alt=""> <span>SUV</span></a></li>
+                    	<li class="item"> <a href="results-list.html#"><img src="images/body-types/minicar.png" alt=""> <span>Minicar</span></a></li>
+                    	<li class="item"> <a href="results-list.html"><img src="images/body-types/sedan.png" alt=""> <span>Sedan</span></a></li>
+                  	</ul>
+               	</div>
+            </div>
+        </div>
+    </div>
+    <!-- Start Body Content -->
+  	<div class="main" role="main">
+    	<div id="content" class="content full padding-b0">
+            <div class="container">
+            	<!-- Welcome Content and Services overview -->
+            	<div class="row">
+                	<div class="col-md-6">
+                    	<h1 class="uppercase strong">Welcome to Experince Forex<br>Listing portal</h1>
+                        <p class="lead">Experince Forex is the world's leading portal for<br>easy and quick <span class="accent-color">car buying and selling</span></p>
+                    </div>
+                    <div class="col-md-6">
+                            <h3>Sell your car to make money</h3>
+                            <h3>Flexible listing options</h3>
+						 <h3>Easy to use tools</h3>
+
+                    </div>
+                </div>
+                <div class="spacer-75"></div>
+                <!-- Recently Listed Vehicles -->
+                <section class="listing-block recent-vehicles">
+                	<div class="listing-header">
+                    	<h3>Recently Listed Vehicles</h3>
+                    </div>
+                    <div class="listing-container">
+                        <div class="carousel-wrapper">
+                            <div class="row">
+                                <ul class="owl-carousel carousel-fw" id="vehicle-slider" data-columns="4" data-autoplay="" data-pagination="yes" data-arrows="no" data-single-item="no" data-items-desktop="4" data-items-desktop-small="3" data-items-tablet="2" data-items-mobile="1">
+                                    <li class="item">
+                                        <div class="vehicle-block format-standard">
+                                            <a href="bmw_m3.html" class="media-box"><img src="BMW_M3.jpg" alt=""></a>
+                                            <div class="vehicle-block-content">
+                                                <span class="label label-default vehicle-age">2016</span>
+                                                <span class="label label-success premium-listing">Premium Listing</span>
+                                                <h5 class="vehicle-title"><a href="bmw_m3.html">BMW M3</a></h5>
+                                                <span class="vehicle-meta"> by <abbr class="user-type" title="Listed by an individual user">Individual</abbr></span>
+                                                <a href="bmw_m3.html" title="View all Sedans" class="vehicle-body-type"><img src="images/body-types/sedan.png" width="30" alt=""></a>
+                                                <span class="vehicle-cost">$100,00</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="item">
+                                        <div class="vehicle-block format-standard">
+                                            <a href="bmw_m5.html" class="media-box"><img src="BMW_M5.jpg" alt=""></a>
+                                            <div class="vehicle-block-content">
+                                                <span class="label label-primary vehicle-age">Brand New</span>
+                                                <h5 class="vehicle-title"><a href="bmw_m5.html">BMW M5</a></h5>
+                                                <span class="vehicle-meta"> by <abbr class="user-type" title="Listed by an dealer">Dealer</abbr></span>
+                                                <a href="bmw_m5.html" title="View all SUVs" class="vehicle-body-type"><img src="images/body-types/suv.png" width="30" alt=""></a>
+                                                <span class="vehicle-cost">$102,000</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="item">
+                                        <div class="vehicle-block format-standard">
+                                            <a href="mercedes_gclass.html" class="media-box"><img src="mercedes_gclass.jpg" alt=""></a>
+                                            <div class="vehicle-block-content">
+                                                <span class="label label-default vehicle-age">2016</span>
+                                                <h5 class="vehicle-title"><a href="mercedes_gclass.html">Mercedes G-class</a></h5>
+                                                <span class="vehicle-meta"> by <abbr class="user-type" title="Listed by an individual">Individual</abbr></span>
+                                                <a href="mercedes_gclass.html" title="View all convertibles" class="vehicle-body-type"><img src="images/body-types/convertible.png" width="30" alt=""></a>
+                                                <span class="vehicle-cost">$120,900</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="item">
+                                        <div class="vehicle-block format-standard">
+                                            <a href="mercedes_benz.html" class="media-box"><img src="Mercedes_Benz.jpg" alt=""></a>
+                                            <div class="vehicle-block-content">
+                                                <span class="label label-default vehicle-age">2016</span>
+                                                <h5 class="vehicle-title"><a href="mercedes_benz.html">Mercedes Benz</a></h5>
+                                                <span class="vehicle-meta"> by <abbr class="user-type" title="Listed by Autostars">Autostars</abbr></span>
+                                                <a href="mercedes_benz.html" title="View all coupes" class="vehicle-body-type"><img src="images/body-types/coupe.png" width="30" alt=""></a>
+                                                <span class="vehicle-cost">$120,000</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="item">
+                                        <div class="vehicle-block format-standard">
+                                            <a href="nissan_maxima.html" class="media-box"><img src="nissan_maxima.jpg" alt=""></a>
+                                            <div class="vehicle-block-content">
+                                                <span class="label label-default vehicle-age">2016</span>
+                                                <span class="label label-success premium-listing">Premium Listing</span>
+                                                <h5 class="vehicle-title"><a href="nissan_maxima.html">Niissan Maxima</a></h5>
+                                                <span class="vehicle-meta"> by <abbr class="user-type" title="Listed by an individual user">Individual</abbr></span>
+                                                <a href="nissan_maxima.html" title="View all Sedans" class="vehicle-body-type"><img src="images/body-types/sedan.png" width="30" alt=""></a>
+                                                <span class="vehicle-cost">$39,900</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="item">
+                                        <div class="vehicle-block format-standard">
+                                            <a href="Nissan_Terrano.html" class="media-box"><img src="Nissan_Terrano.jpg" alt=""></a>
+                                            <div class="vehicle-block-content">
+                                                <span class="label label-primary vehicle-age">Brand New</span>
+                                                <h5 class="vehicle-title"><a href="Nissan_Terrano.html">Nissan Terrano</a></h5>
+                                                <span class="vehicle-meta"> by <abbr class="user-type" title="Listed by an dealer">Dealer</abbr></span>
+                                                <a href="Nissan_Terrano.html" title="View all SUVs" class="vehicle-body-type"><img src="images/body-types/suv.png" width="30" alt=""></a>
+                                                <span class="vehicle-cost">$28,900</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="item">
+                                        <div class="vehicle-block format-standard">
+                                            <a href="toyota_camry.html" class="media-box"><img src="toyota_camry.jpg" alt=""></a>
+                                            <div class="vehicle-block-content">
+                                                <span class="label label-default vehicle-age">2016</span>
+                                                <h5 class="vehicle-title"><a href="toyota_camry.html">toyota camry</a></h5>
+                                                <span class="vehicle-meta"> by <abbr class="user-type" title="Listed by an individual">Individual</abbr></span>
+                                                <a href="toyota_camry.html" title="View all convertibles" class="vehicle-body-type"><img src="images/body-types/convertible.png" width="30" alt=""></a>
+                                                <span class="vehicle-cost">$39,900</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="item">
+                                        <div class="vehicle-block format-standard">
+                                            <a href="toyota_corola.html" class="media-box"><img src="toyota_corola.jpg" alt=""></a>
+                                            <div class="vehicle-block-content">
+                                                <span class="label label-default vehicle-age">2014</span>
+                                                <h5 class="vehicle-title"><a href="toyota_corola.html">toyota corola</a></h5>
+                                                <span class="vehicle-meta">by <abbr class="user-type" title="Listed by Autostars">Autostars</abbr></span>
+                                                <a href="toyota_corola.html" title="View all coupes" class="vehicle-body-type"><img src="images/body-types/coupe.png" width="30" alt=""></a>
+                                                <span class="vehicle-cost">$35,000</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <div class="spacer-60"></div>
+             	<div class="row">
+                    <!-- Latest News -->
+                    <div class="col-md-8 col-sm-6">
+                        
+                		<div class="spacer-5"></div>
+                        <!-- Latest Testimonials -->
+                        <section class="listing-block latest-testimonials">
+                            <div class="listing-header">
+                                <h3>News</h3>
+                            </div>
+                            <div class="listing-container">
+                            	<div class="carousel-wrapper">
+                                    <div class="row">
+                                        <ul class="owl-carousel carousel-fw" id="testimonials-slider" data-columns="2" data-autoplay="5000" data-pagination="no" data-arrows="no" data-single-item="no" data-items-desktop="2" data-items-desktop-small="1" data-items-tablet="1" data-items-mobile="1">
+                                            <li class="item">
+                                                <div class="testimonial-block">
+                                                    <blockquote>
+                                                        <p>2020 VW Golf: Expect green powertrains and inescapable in-cabin technology</p>
+                                                    </blockquote>
+                                                    <div class="testimonial-avatar"><img src="http://placehold.it/100x100&amp;text=IMAGE+PLACEHOLDER" alt="" width="60" height="60"></div>
+                                                    <div class="testimonial-info">
+                                                        <div class="testimonial-info-in">
+                                                            <strong>Arthur Henry</strong><span>Carsales Inc</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="item">
+                                                <div class="testimonial-block">
+                                                    <blockquote>
+                                                        <p>Tesla Model 3: report claims batteries are being made manually as delays continue</p>
+                                                    </blockquote>
+                                                    <div class="testimonial-avatar"><img src="http://placehold.it/100x100&amp;text=IMAGE+PLACEHOLDER" alt="" width="60" height="60"></div>
+                                                    <div class="testimonial-info">
+                                                        <div class="testimonial-info-in">
+                                                            <strong>Lori Bailey</strong><span>My car Experts</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="item">
+                                                <div class="testimonial-block">
+                                                    <blockquote>
+                                                        <p>2018 Mazda CX-3 essentials: More style than space</p>
+                                                    </blockquote>
+                                                    <div class="testimonial-avatar"><img src="http://placehold.it/100x100&amp;text=IMAGE+PLACEHOLDER" alt="" width="60" height="60"></div>
+                                                    <div class="testimonial-info">
+                                                        <div class="testimonial-info-in">
+                                                            <strong>Willie &amp; Heather Obrien</strong>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <!-- Latest Reviews -->
+                    <div class="col-md-4 col-sm-6 sidebar">
+                		<div class="spacer-40"></div>
+                        <!-- Connect with us -->
+                        <section class="connect-with-us widget-block">
+                            <h4><i class="fa fa-rss"></i> Connect with us</h4>
+                            <form role="form">
+                                <label for="NewsletterInput" class="sr-only">Email</label>
+                                <input type="email" class="form-control" id="NewsletterInput" placeholder="Subscribe via email">
+                                <button type="submit" onclick="afg()" class="btn btn-sm btn-primary">Subscribe</button>
+								<script type="text/javascript">
+					function afg(){
+					alert("thank you ... "); }
+					</script>
+                                <span class="meta-data">Don't worry, we won't spam you</span>
+                            </form>
+                            
+                        </section>
+                    </div>
+              	</div>
+           	</div>
+            <div class="spacer-50"></div>
+            
+        </div>
+   	</div>
+    <!-- End Body Content -->
+    <!-- Start site footer -->
+    <footer class="site-footer">
+       	<div class="site-footer-top">
+       		<div class="container">
+                <div class="row">
+                	
+                	<div class="col-md-2 col-sm-6 footer_widget widget widget_custom_menu widget_links">
+                    	<h4 class="widgettitle">german</h4>
+                        <ul>
+                        	<li><a href="results-list-2.html">BMW</a></li>
+                        	<li><a href="results-list-3.html">Mercedes</a></li>
+                        	
+                        </ul>
+                    </div>
+                	<div class="col-md-2 col-sm-6 footer_widget widget widget_custom_menu widget_links">
+                    	<h4 class="widgettitle">korea</h4>
+                        <ul>
+                        	<li><a href="results-list-1.html">Hundai</a></li>
+                        	<li><a href="results-list.html">KIA</a></li>
+                        </ul>
+                    </div>
+					<div class="col-md-2 col-sm-6 footer_widget widget widget_custom_menu widget_links">
+                    	<h4 class="widgettitle">japan</h4>
+                        <ul>
+                        	<li><a href="results-list-4.html">Nissan</a></li>
+                        	<li><a href="results-list-5.html">Toyota</a></li>
+                        	
+                        </ul>
+                    </div>
+                	<div class="col-md-5 col-sm-6 footer_widget widget text_widget">
+                    	<h4 class="widgettitle">About Experince Forex</h4>
+                        <p>Experince Forex is the world's leading portal for
+easy and quick car buying and selling</p>
+                    </div>
+                </div>
+            </div>
+     	</div>
+        <div class="site-footer-bottom">
+        	<div class="container">
+                <div class="row">
+                	<div class="col-md-6 col-sm-6 copyrights-left">
+                    	<p>&copy; 2014 Experince Forex. All Rights Reserved</p>
+                    </div>
+                    <div class="col-md-6 col-sm-6 copyrights-right">
+                        <ul class="social-icons social-icons-colored pull-right">
+                            <li class="facebook"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li class="twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li class="linkedin"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            <li class="youtube"><a href="#"><i class="fa fa-youtube"></i></a></li>
+                            <li class="flickr"><a href="#"><i class="fa fa-flickr"></i></a></li>
+                            <li class="vimeo"><a href="#"><i class="fa fa-vimeo-square"></i></a></li>
+                            <li class="digg"><a href="#"><i class="fa fa-digg"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End site footer -->
+  	<a id="back-to-top"><i class="fa fa-angle-double-up"></i></a>  
+</div>
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog"  aria-hidden="true">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4>Login to your account</h4>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                        <input type="text" class="form-control" placeholder="Username">
+                    </div>
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="fa fa-key"></i></span>
+                        <input type="password" class="form-control" placeholder="Password">
+                    </div>
+                    <input type="submit" class="btn btn-primary" value="Login">
+                </form>
+           	</div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-block btn-facebook btn-social"><i class="fa fa-facebook"></i> Login with Facebook</button>
+                <button type="button" class="btn btn-block btn-twitter btn-social"><i class="fa fa-twitter"></i> Login with Twitter</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/jquery-2.0.0.min.js"></script> <!-- Jquery Library Call -->
+<script src="vendor/prettyphoto/js/prettyphoto.js"></script> <!-- PrettyPhoto Plugin -->
+<script src="js/ui-plugins.js"></script> <!-- UI Plugins -->
+<script src="js/helper-plugins.js"></script> <!-- Helper Plugins -->
+<script src="vendor/owl-carousel/js/owl.carousel.min.js"></script> <!-- Owl Carousel -->
+<script src="vendor/password-checker.js"></script> <!-- Password Checker -->
+<script src="js/bootstrap.js"></script> <!-- UI -->
+<script src="js/init.js"></script> <!-- All Scripts -->
+<script src="vendor/flexslider/js/jquery.flexslider.js"></script> <!-- FlexSlider -->
+<script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+</body>
+</html>
